@@ -23,7 +23,10 @@ set shiftwidth=4
 """"""""""""""""""""""""""""""""""""""""""""""
 call plug#begin('~/.vim/plugged') 
     Plug 'junegunn/fzf'
+    Plug 'preservim/nerdtree'
+    Plug 'rafi/awesome-vim-colorschemes'
 call plug#end()
+
 
 """"""""""""""""""""""""""""""""""""""""""""""
 " Remaps
@@ -33,3 +36,10 @@ nmap <C-h> <C-w><C-h>
 nmap <C-j> <C-w><C-j>
 nmap <C-k> <C-w><C-k>
 nmap <C-l> <C-w><C-l>
+
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
+
+set background=dark
+colorscheme solarized8
